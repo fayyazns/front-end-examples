@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TMC Bootstrap</title>
+    <!-- font-awesome-link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- font-family-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
+
+    <!-- bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+
+    <!-- custum css -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- header-container-started -->
+            <div class="header">
+                <div class="container container-padding">
+                    <div class="row no-gutters">
+                        <div class="col-12 col-sm-6 col-md-2 col-lg-2">
+                            <img src="./images/tmc-logo_02.jpg" alt="Tmc logo">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-7 col-lg-7 search-box">
+                            <form>
+                                <select name="select-bar" id="select-bar">
+                                    <option value="english">EN</option>
+                                    <option value="urdu">URD</option>
+                                    <option value="spanish" >SPN</option>
+                                    <option value="turkish">TUR</option>
+                                </select>
+                            </form>
+                            <div class="menu-bars">
+                                <i class="fa fa-bars" id="top-menu-bar" aria-hidden="true"></i>
+                            </div>
+                            <div class="menu-bars-dropdown">
+                                <form class="dropdown-form">
+                                    <input type="radio" name="find" value="find-a-mosque" checked>
+                                    <label for="radio"> Find A Mosk</label>
+                                    <input type="radio" name="find" value="prayer-time">
+                                    <label for="radio"> Prayer Time</label>
+                                    <input type="radio" name="find" value="quran-verses">
+                                    <label for="radio"> Verses</label>
+                                    <input type="radio" name="find" value="faqs">
+                                    <label for="radio"> FAQs</label>
+                                    <select name="country-bar" class="dropdown-select-bar">
+                                        <option value="country">Country</option>
+                                        <option value="country">Pakistan</option>
+                                        <option value="country">Saudi Arabia</option>
+                                        <option value="country">Qatar</option>
+                                        </select>
+                                    <select name="city-bar" class="dropdown-select-bar">
+                                        <option value="city">City</option>
+                                        <option value="city">Karachi</option>
+                                        <option value="city">Madina</option>
+                                        <option value="city">Doha</option>
+                                    </select>
+                                    <input type="text" placeholder="Region/Area*" required>
+                                    <button type="submit">Search</button>
+                                </form>
+                            </div>
+                            <form class="for-mquery">
+                                <input type="text" id="search-text-input" />
+                                <i class="fa fa-search"></i>
+                            </form>
+                            <a href="javascript:;" class="add-mosq">ADD MOSQ</a>
+                            <div class="add-mosk-dropdown">
+                                <form class="add-mosq-form">
+                                    <input type="text" placeholder="Mosk Name*" required>
+                                    <input type="number" placeholder="Phone*" required>
+                                    <input type="text" placeholder="P.O Box Number*" required>
+                                    <select name="country-bar" class="dropdown-select-bar">
+                                        <option value="country">Country</option>
+                                        <option value="country">Pakistan</option>
+                                        <option value="country">Saudi Arabia</option>
+                                        <option value="country">Qatar</option>
+                                    </select>
+                                    <select name="city-bar" class="dropdown-select-bar">
+                                        <option value="city">City</option>
+                                        <option value="city">Karachi</option>
+                                        <option value="city">Madina</option>
+                                        <option value="city">Doha</option>
+                                    </select>
+                                    <input type="text" placeholder="Region/Area*" required>
+                                    <input type="text" placeholder="Address">
+                                    <button type="submit"> + Add</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                            <div class="social-media">
+                                <a href="#" class="fa fa-facebook" title="Facebook"></a>
+                                <a href="#" class="fa fa-twitter" title="Twitter"></a>
+                                <a href="#" class="fa fa-linkedin" title="LinkedIn"></a>
+                                <a href="#" class="fa fa-google-plus" title="Google Plus"></a>
+                                <a href="#" class="fa fa-instagram" title="Instagram"></a>
+                                <a href="#" class="fa fa-youtube" title="Youtube"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- navigation-container-started -->
+            <div class="navigation">
+                <div class="container container-padding">
+                    <div class="row no-gutters">
+                        <div class="col-12">
+                            <div class="navbar navbar-expand-lg navbar-light navbar-btn-right">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav mr-auto">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="./index.html" class="active">Home</a></li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="./about.html">About</a></li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="./regions-areas.html">Regions/Areas</a></li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="./events.html">Events</a></li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="./ask-imam.html">Ask Imam</a></li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="./weekend-school.html">Weekend School</a></li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="./blog.html">Blog</a></li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="./contact.html">Contact</a></li>
+                                        <li id="donate">
+                                            <a href="./donate-now.html">Donate Now</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- slider-started -->
+            <div id="carouselExampleSlidesOnly" class="slider carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="slide carousel-item active">
+                        <div class="container container-padding">
+                            <div class="row no-gutters">
+                                <div class="col-12">
+                                    <h1>The Muslim Connection 1</h1>
+                                    <ul>
+                                        <li>Proin gravida nibh vel velit auctor aliquet aenean.</li>
+                                        <li>Sollicitudin, lorem quis bibendum auctor nisi.</li>
+                                        <li>Consequat ipsum, nec sagittis sem nibh.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide carousel-item">
+                        <div class="container container-padding">
+                            <div class="row no-gutters">
+                                <div class="col-12">
+                                    <h1>The Muslim Connection 2</h1>
+                                    <ul>
+                                        <li>Proin gravida nibh vel velit auctor aliquet aenean.</li>
+                                        <li>Sollicitudin, lorem quis bibendum auctor nisi.</li>
+                                        <li>Consequat ipsum, nec sagittis sem nibh.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide carousel-item">
+                        <div class="container container-padding">
+                            <div class="row no-gutters">
+                                <div class="col-12">
+                                    <h1>The Muslim Connection 3</h1>
+                                    <ul>
+                                        <li>Proin gravida nibh vel velit auctor aliquet aenean.</li>
+                                        <li>Sollicitudin, lorem quis bibendum auctor nisi.</li>
+                                        <li>Consequat ipsum, nec sagittis sem nibh.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- middle-container-started -->
+            <div class="middle-container">
+                <div class="container container-padding">
+                    <div class="row no-gutters">
+                        <div class="hidden-sm-up offset-1"></div>
+                        <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-max-width">
+                            <h2><strong>TMC</strong>The Muslim Connection</h2>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-8 col-lg-8">
+                            <div class="banner-text">
+                                <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
+                                    bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio
+                                    sit amet nibh vulputate cursus a sit amet mauris.
+                                </p>
+                                <a href="#">Ask Imam</a>
+                            </div>
+                        </div>
+                        <div class="hidden-sm-up offset-1"></div>
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="col-12 col-sm-2 col-md-6 box-col-width">
+                            <div class="boxes-description">
+                                <i class="fa fa-search"></i>
+                                <h3>Find Events</h3>
+                                <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
+                                    bibendum auctor, nisi elit consequat </p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-2 col-md-6 box-col-width">
+                            <div class="boxes-description">
+                                <h3><span></span>Qoran Recitation</h3>
+                                <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
+                                    bibendum auctor, nisi elit consequat </p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-2 col-md-6 box-col-width">
+                            <div class="boxes-description">
+                                <h3><span></span>Hadith & Sunnah</h3>
+                                <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
+                                    bibendum auctor, nisi elit consequat </p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-2 col-md-6 box-col-width">
+                            <div class="boxes-description">
+                                <h3><span></span>Video Sermons</h3>
+                                <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
+                                    bibendum auctor, nisi elit consequat </p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-2 col-md-6 box-col-width">
+                            <div class="boxes-description">
+                                <h3><span></span>Donation</h3>
+                                <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
+                                    bibendum auctor, nisi elit consequat </p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-2 col-md-6 box-col-width">
+                            <div class="boxes-description">
+                                <h3><span></span>Sisters</h3>
+                                <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
+                                    bibendum auctor, nisi elit consequat </p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br style="clear: both" />
+            </div>
+            <!-- urgent-donation-started -->
+            <div id="carouselExampleIndicators" class="urgent-donation carousel slide" data-ride="carousel">
+                <div class="container container-padding">
+                    <div class="row no-gutters">
+                        <div class="col-12 col-sm-12 col-md-12">
+                            <h3 class="yellow-waves text-center text-uppercase">Urgent Donations</h3>
+                            <ul class="slider-nav carousel-indicators" id="urgnt-dontn-nav">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"><a href="javascript:;"></a></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"><a href="javascript:;"></a></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"><a href="javascript:;"></a></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="3"><a href="javascript:;"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="col-12 col-sm-12 col-md-6 float-left">
+                                    <div class="ict-masjid">
+                                        <h3 class="text-center text-uppercase">Help Build ICT Masjid 1</h3>
+                                        <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+                                            quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                                            Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+                                        </p>
+                                        <div class="table-scroll">
+                                            <table cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                    <td><strong>33% </strong>Funded</td>
+                                                    <td><strong>$18900 </strong>Pledged</td>
+                                                    <td><strong>$56800 </strong>Goal</td>
+                                                    <td><strong>967 </strong>Backers</td>
+                                                    <td><strong>321 </strong>Days to go</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="5">
+                                                        <a href="#" class="plus"> + </a>
+                                                        <div class="tbl-progress-bar">
+                                                            <strong>Over All</strong>
+                                                            <div class="tbl-progress">
+                                                                <span>40% Funded</span> 80 Days Left
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="5">
+                                                        <a href="#" class="donate-btn">Donate for this project</a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 float-left">
+                                    <div class="masjid-img">
+                                        <img src="./images/masjid_03.jpg" alt="Masjid" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-12 col-sm-12 col-md-6 float-left">
+                                    <div class="ict-masjid">
+                                        <h3 class="text-center text-uppercase">Help Build ICT Masjid 2</h3>
+                                        <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+                                            quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                                            Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+                                        </p>
+                                        <div class="table-scroll">
+                                            <table cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                    <td><strong>33% </strong>Funded</td>
+                                                    <td><strong>$18900 </strong>Pledged</td>
+                                                    <td><strong>$56800 </strong>Goal</td>
+                                                    <td><strong>967 </strong>Backers</td>
+                                                    <td><strong>321 </strong>Days to go</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="5">
+                                                        <a href="#" class="plus"> + </a>
+                                                        <div class="tbl-progress-bar">
+                                                            <strong>Over All</strong>
+                                                            <div class="tbl-progress">
+                                                                <span>40% Funded</span> 80 Days Left
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="5">
+                                                        <a href="#" class="donate-btn">Donate for this project</a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 float-left">
+                                    <div class="masjid-img">
+                                        <img src="./images/masjid_03.jpg" alt="Masjid" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-12 col-sm-12 col-md-6 float-left">
+                                    <div class="ict-masjid">
+                                        <h3 class="text-center text-uppercase">Help Build ICT Masjid 3</h3>
+                                        <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+                                            quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                                            Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+                                        </p>
+                                        <div class="table-scroll">
+                                            <table cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                    <td><strong>33% </strong>Funded</td>
+                                                    <td><strong>$18900 </strong>Pledged</td>
+                                                    <td><strong>$56800 </strong>Goal</td>
+                                                    <td><strong>967 </strong>Backers</td>
+                                                    <td><strong>321 </strong>Days to go</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="5">
+                                                        <a href="#" class="plus"> + </a>
+                                                        <div class="tbl-progress-bar">
+                                                            <strong>Over All</strong>
+                                                            <div class="tbl-progress">
+                                                                <span>40% Funded</span> 80 Days Left
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="5">
+                                                        <a href="#" class="donate-btn">Donate for this project</a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 float-left">
+                                    <div class="masjid-img">
+                                        <img src="./images/masjid_03.jpg" alt="Masjid" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-12 col-sm-12 col-md-6 float-left">
+                                    <div class="ict-masjid">
+                                        <h3 class="text-center text-uppercase">Help Build ICT Masjid 4</h3>
+                                        <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+                                            quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                                            Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+                                        </p>
+                                        <div class="table-scroll">
+                                            <table cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                    <td><strong>33% </strong>Funded</td>
+                                                    <td><strong>$18900 </strong>Pledged</td>
+                                                    <td><strong>$56800 </strong>Goal</td>
+                                                    <td><strong>967 </strong>Backers</td>
+                                                    <td><strong>321 </strong>Days to go</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="5">
+                                                        <a href="#" class="plus"> + </a>
+                                                        <div class="tbl-progress-bar">
+                                                            <strong>Over All</strong>
+                                                            <div class="tbl-progress">
+                                                                <span>40% Funded</span> 80 Days Left
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="5">
+                                                        <a href="#" class="donate-btn">Donate for this project</a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 float-left">
+                                    <div class="masjid-img">
+                                        <img src="./images/masjid_03.jpg" alt="Masjid" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br style="clear: both" />
+            </div>
+
+            <!--for-media-query-urgent-donation-section-started-->
+            <div class="urgent-donation for-md-query-urgent-donation">
+                <div class="container container-padding">
+                    <div class="row no-gutters">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                            <h3 class="yellow-waves text-center text-uppercase">Urgent Donations</h3>
+                            <ul class="slider-nav" id="urgnt-dontn-nav">
+                                <li class="active"><a href="javascript:;"></a></li>
+                                <li><a href="javascript:;"></a></li>
+                                <li><a href="javascript:;"></a></li>
+                                <li><a href="javascript:;"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="col-12 col-sm-12">
+                            <div class="masjid-img">
+                                <img src="./images/masjid_03.jpg" alt="Masjid" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12">
+                            <div class="ict-masjid">
+                                <h3 class="text-center text-uppercase">Help Build ICT Masjid 1</h3>
+                                <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
+                                    bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio
+                                    sit amet nibh vulputate cursus a sit amet mauris.
+                                </p>
+                                <div class="table-scroll">
+                                    <table cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td><strong>33% </strong>Funded</td>
+                                            <td><strong>$18900 </strong>Pledged</td>
+                                            <td><strong>$56800 </strong>Goal</td>
+                                            <td><strong>967 </strong>Backers</td>
+                                            <td><strong>321 </strong>Days to go</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5">
+                                                <a href="#" class="plus"> + </a>
+                                                <div class="tbl-progress-bar">
+                                                    <strong>Over All</strong>
+                                                    <div class="tbl-progress">
+                                                        <span>40% Funded</span> 80 Days Left
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5">
+                                                <a href="#" class="donate-btn">Donate for this project</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br style="clear: both" />
+            </div>
+
+            <!-- join-tmc-conatiner-started -->
+            <div class="join-tmc text-center">
+                <div class="container container-padding">
+                    <div class="row no-gutters">
+                        <div class="col-12 col-sm-12">
+                            <h3 class="text-uppercase text-center ">Join The TMC Community</h3>
+                            <a href="#" class="text-uppercase">Join Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--subscribe-section-started-->
+            <div class="subscribe-tmc text-center">
+                <div class="container container-padding">
+                    <div class="row no-gutters">
+                        <div class="col-12">
+                            <h3 class="yellow-waves text-center text-uppercase">Subscribe To TMC @USF</h3>
+                        </div>
+                        <div class="col-12">
+                            <form>
+                                <input type="text" id="name" placeholder="Your Name Goes Here" />
+                                <label for="email"></label>
+                                <input type="text" id="email" placeholder="Your Email Address" />
+                                <button type="submit" class="text-uppercase">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--feed-backs-section-started-->
+            <div class="feed-backs">
+                <div class="container container-padding">
+                    <div class="row no-gutters">
+                        <div class="col-12 col-sm-12 col-md-6">
+                            <div class="twitter-feeds">
+                                <h2 class="text-uppercase">Twitter Feeds</h2>
+                                <div class="users-feedbacks">
+                                    <img src="./images/familypic-twitter_07.jpg" alt="Person" />
+                                    <h5>Lorem Ipsum</h5>
+                                    <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+                                        quis bibendum auctor, sit amet mauris.
+                                    </p>
+                                    <ul>
+                                        <li><a href="#">Read More</a></li>
+                                        <li><i class="fa fa-heart-o" aria-hidden="true"></i><a href="#">50 Likes</a></li>
+                                        <li><a href="#">20 Comments</a></li>
+                                    </ul>
+                                </div>
+                                <div class="users-feedbacks">
+                                    <img src="./images/brotherhood-twiiter_10.jpg" alt="Person" />
+                                    <h5>Lorem Ipsum</h5>
+                                    <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+                                        quis bibendum auctor, sit amet mauris.
+                                    </p>
+                                    <ul>
+                                        <li><a href="#">Read More</a></li>
+                                        <li><i class="fa fa-heart-o" aria-hidden="true"></i><a href="#">50 Likes</a></li>
+                                        <li><a href="#">20 Comments</a></li>
+                                    </ul>
+                                </div>
+                                <div class="users-feedbacks">
+                                    <img src="./images/performslah-twitter_13.jpg" alt="Person" />
+                                    <h5>Lorem Ipsum</h5>
+                                    <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+                                        quis bibendum auctor, sit amet mauris.
+                                    </p>
+                                    <ul>
+                                        <li><a href="#">Read More</a></li>
+                                        <li><i class="fa fa-heart-o" aria-hidden="true"></i><a href="#">50 Likes</a></li>
+                                        <li><a href="#">20 Comments</a></li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="donate-btn">Donate For This Project</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6">
+                            <div class="faqs-about-islam">
+                                <h2 class="text-uppercase">FAQ<span>s</span> About Islam</h2>
+                                <div id="accordion" role="tablist">
+                                    <div class="card faqs-card-margin">
+                                        <div class="card-header faqs-card-header active" role="tab" id="headingOne">
+                                            <h5 class="mb-0 active">
+                                                <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Lorem Ipsum </a>
+                                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                                            <div class="card-body faqs-body-padding">
+                                                <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+                                                    lorem quis bibendum auctor, sit amet mauris.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card faqs-card-margin">
+                                        <div class="card-header faqs-card-header" role="tab" id="headingTwo">
+                                            <h5 class="mb-0">
+                                                <a data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Lorem Ipsum </a>
+                                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+                                            <div class="card-body faqs-body-padding">
+                                                <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+                                                    lorem quis bibendum auctor, sit amet mauris.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card faqs-card-margin">
+                                        <div class="card-header faqs-card-header" role="tab" id="headingThree">
+                                            <h5 class="mb-0">
+                                                <a data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Gravida nibh vel velit auctor aliquet </a>
+                                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+                                            <div class="card-body faqs-body-padding">
+                                                <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+                                                    lorem quis bibendum auctor, sit amet mauris.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card faqs-card-margin">
+                                        <div class="card-header faqs-card-header" role="tab" id="headingFour">
+                                            <h5 class="mb-0">
+                                                <a data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Aenean sollicitudin </a>
+                                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion">
+                                            <div class="card-body faqs-body-padding">
+                                                <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+                                                    lorem quis bibendum auctor, sit amet mauris.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card faqs-card-margin">
+                                        <div class="card-header faqs-card-header" role="tab" id="headingFive">
+                                            <h5 class="mb-0">
+                                                <a data-toggle="collapse" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Nisi elit consequat ipsum </a>
+                                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive" data-parent="#accordion">
+                                            <div class="card-body faqs-body-padding">
+                                                <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+                                                    lorem quis bibendum auctor, sit amet mauris.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card faqs-card-margin">
+                                        <div class="card-header faqs-card-header" role="tab" id="headingSix">
+                                            <h5 class="mb-0">
+                                                <a data-toggle="collapse" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">Nec sagittis sem nibh id elit </a>
+                                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseSix" class="collapse" role="tabpanel" aria-labelledby="headingSix" data-parent="#accordion">
+                                            <div class="card-body faqs-body-padding">
+                                                <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+                                                    lorem quis bibendum auctor, sit amet mauris.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card faqs-card-margin">
+                                        <div class="card-header faqs-card-header" role="tab" id="headingSeven">
+                                            <h5 class="mb-0">
+                                                <a data-toggle="collapse" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">Duis sed odio sit amet nibh vulputate cursus </a>
+                                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseSeven" class="collapse" role="tabpanel" aria-labelledby="headingSeven" data-parent="#accordion">
+                                            <div class="card-body faqs-body-padding">
+                                                <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+                                                    lorem quis bibendum auctor, sit amet mauris.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card faqs-card-margin">
+                                        <div class="card-header faqs-card-header" role="tab" id="headingEight">
+                                            <h5 class="mb-0">
+                                                <a data-toggle="collapse" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">A sit amet mauris. Morbi accumsan </a>
+                                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseEight" class="collapse" role="tabpanel" aria-labelledby="headingEight" data-parent="#accordion">
+                                            <div class="card-body faqs-body-padding">
+                                                <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+                                                    lorem quis bibendum auctor, sit amet mauris.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br style="clear: both" />
+            </div>
+            <!--our-gallery-section-started-->
+            <div class="our-gallery">
+                <div class="container container-padding">
+                    <div class="row no-gutters">
+                        <div class="col-12">
+                            <h3 class="text-center text-uppercase">Our Gallery</h3>
+                            <div class="gallery-scroll-md-query">
+                                <div class="gallery-main-container">
+                                    <div class="images">
+                                        <a href="./images/popupimage.jpg" class="image-opener" data-toggle="modal" data-target="#image-viewer">
+                                            <img src="./images/white-cap.png" class="right-margin" alt="gallery"/>
+                                        </a>
+                                        <a href="./images/popupimage2.jpg" class="image-opener" data-toggle="modal" data-target="#image-viewer">
+                                            <img src="./images/person-salah.png" alt="gallery"/>
+                                        </a>
+                                    </div>
+                                    <div class="images">
+                                        <a href="./images/popupimage3.jpg" class="image-opener" data-toggle="modal" data-target="#image-viewer">
+                                            <img src="./images/girl-blue.png" alt="gallery"/>
+                                        </a>
+                                        <a href="./images/popupimage.jpg" class="image-opener" data-toggle="modal" data-target="#image-viewer">
+                                            <img src="./images/khana-kaba.png" alt="gallery"/>
+                                        </a>
+                                        <a href="./images/popupimage2.jpg" class="image-opener" data-toggle="modal" data-target="#image-viewer">
+                                            <img src="./images/holy-quran.png" alt="gallery"/>
+                                        </a>
+                                    </div>
+                                    <div class="images">
+                                        <a href="./images/popupimage2.jpg" class="image-opener" data-toggle="modal" data-target="#image-viewer">
+                                            <img src="./images/little-girl.png" alt="gallery"/>
+                                        </a>
+                                        <a href="./images/popupimage3.jpg" class="image-opener" data-toggle="modal" data-target="#image-viewer">
+                                            <img src="./images/couples.png" alt="gallery"/>
+                                        </a>
+                                    </div>
+                                    <div class="images">
+                                        <a href="./images/popupimage.jpg" class="image-opener" data-toggle="modal" data-target="#image-viewer">
+                                            <img src="./images/girl-black.png" alt="gallery"/>
+                                        </a>
+                                        <a href="./images/popupimage2.jpg" class="image-opener" data-toggle="modal" data-target="#image-viewer">
+                                            <img src="./images/prayers.png" alt="gallery"/>
+                                        </a>
+                                    </div>
+                                    <div class="images">
+                                        <a href="./images/popupimage.jpg" class="image-opener" data-toggle="modal" data-target="#image-viewer">
+                                            <img src="./images/girls.png" class="position-right" alt="gallery"/>
+                                        </a>
+                                        <a href="./images/popupimage3.jpg" class="image-opener" data-toggle="modal" data-target="#image-viewer">
+                                            <img src="./images/family.png" alt="gallery"/>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- image viewer modal used from bootstrap -->
+                                <!-- Button trigger modal -->
+
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="image-viewer" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document" style="max-width:800px;">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <!-- <p> image opener </p> -->
+                                                <img class="image-responsive" src="" alt="Image" style="width:100%; height:420px;">
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br style="clear: both" />
+            </div>
+            <!--mosks-addresses-started-->
+            <div class="mosks-addresses">
+                <div class="container container-padding">
+                    <div class="row no-gutters">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="mosk-img">
+                                <img src="./images/mosk1_03.jpg" alt="Mosk" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="address-detail address-padding-left">
+                                <h3>Lorem Ipsum Mosk</h3>
+                                <a href="#"><i class="fa fa-map-marker"></i> Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin</a>
+                                <a href="#"><i class="fa fa-phone"></i> +1 123 456 78</a>
+                                <a href="#"><i class="fa fa-envelope"></i> info@loremispum.com</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="address-detail address-padding-right">
+                                <h3>Lorem Ipsum Mosk</h3>
+                                <a href="#"><i class="fa fa-map-marker"></i> Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin</a>
+                                <a href="#"><i class="fa fa-phone"></i> +1 123 456 78</a>
+                                <a href="#"><i class="fa fa-envelope"></i> info@loremispum.com</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="mosk-img">
+                                <img src="./images/mosk-3_06.jpg" alt="Mosk" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="mosk-img">
+                                <img src="./images/mosk-white_06.jpg" alt="Mosk" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="address-detail address-padding-left">
+                                <h3>Lorem Ipsum Mosk</h3>
+                                <a href="#"><i class="fa fa-map-marker"></i> Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin</a>
+                                <a href="#"><i class="fa fa-phone"></i> +1 123 456 78</a>
+                                <a href="#"><i class="fa fa-envelope"></i> info@loremispum.com</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="address-detail address-padding-right">
+                                <h3>Lorem Ipsum Mosk</h3>
+                                <a href="#"><i class="fa fa-map-marker"></i> Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin</a>
+                                <a href="#"><i class="fa fa-phone"></i> +1 123 456 78</a>
+                                <a href="#"><i class="fa fa-envelope"></i> info@loremispum.com</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="mosk-img">
+                                <img src="./images/mosk-4_11.jpg" alt="Mosk" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--mosks-addresses-started-->
+            <div class="mosks-addresses for-mq-display-none">
+                <div class="container container-padding">
+                    <div class="row no-gutters">
+                        <div class="col-12 col-sm-12">
+                            <div class="mosk-img">
+                                <img src="./images/mosk1_03.jpg" alt="Mosk" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12">
+                            <div class="address-detail address-padding-left">
+                                <h3>Lorem Ipsum Mosk</h3>
+                                <a href="#"><i class="fa fa-map-marker"></i> Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin</a>
+                                <a href="#"><i class="fa fa-phone"></i> +1 123 456 78</a>
+                                <a href="#"><i class="fa fa-envelope"></i> info@loremispum.com</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12">
+                            <div class="mosk-img">
+                                <img src="./images/mosk-3_06.jpg" alt="Mosk" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12">
+                            <div class="address-detail address-padding-right">
+                                <h3>Lorem Ipsum Mosk</h3>
+                                <a href="#"><i class="fa fa-map-marker"></i> Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin</a>
+                                <a href="#"><i class="fa fa-phone"></i> +1 123 456 78</a>
+                                <a href="#"><i class="fa fa-envelope"></i> info@loremispum.com</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12">
+                            <div class="mosk-img">
+                                <img src="./images/mosk-white_06.jpg" alt="Mosk" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12">
+                            <div class="address-detail address-padding-left">
+                                <h3>Lorem Ipsum Mosk</h3>
+                                <a href="#"><i class="fa fa-map-marker"></i> Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin</a>
+                                <a href="#"><i class="fa fa-phone"></i> +1 123 456 78</a>
+                                <a href="#"><i class="fa fa-envelope"></i> info@loremispum.com</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12">
+                            <div class="mosk-img">
+                                <img src="./images/mosk-4_11.jpg" alt="Mosk" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12">
+                            <div class="address-detail address-padding-right">
+                                <h3>Lorem Ipsum Mosk</h3>
+                                <a href="#"><i class="fa fa-map-marker"></i> Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin</a>
+                                <a href="#"><i class="fa fa-phone"></i> +1 123 456 78</a>
+                                <a href="#"><i class="fa fa-envelope"></i> info@loremispum.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--our-partners-section-started-->
+            <div id="carouselExampleIndicators2" class="our-partners carousel slide" data-ride="carousel">
+                <div class="container container-padding">
+                    <div class="row no-gutters">
+                        <div class="col-12 col-sm-12 col-md-12">
+                            <h3 class="yellow-waves text-center text-uppercase">Our Partners</h3>
+                            <ul class="slider-nav carousel-indicators">
+                                <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"><a href="javascript:;"></a></li>
+                                <li data-target="#carouselExampleIndicators2" data-slide-to="1"><a href="javascript:;"></a></li>
+                                <li data-target="#carouselExampleIndicators2" data-slide-to="2"><a href="javascript:;"></a></li>
+                                <li data-target="#carouselExampleIndicators2" data-slide-to="3"><a href="javascript:;"></a></li>
+                            </ul>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 float-left">
+                                    <div class="partner-img">
+                                        <img src="./images/masjid_03.jpg" alt="masjid" />
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 float-left">
+                                    <div class="become-a-partner">
+                                        <h3 class="text-center text-uppercase">Become a Partner 1</h3>
+                                        <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+                                            quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                                            Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.</p>
+                                        <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.
+                                            Sed non mauris vitae erat consequat auctor eu in elit. </p>
+                                        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                                            himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum
+                                            sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum
+                                            fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas
+                                            quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 float-left">
+                                    <div class="partner-img">
+                                        <img src="./images/masjid_03.jpg" alt="masjid" />
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 float-left">
+                                    <div class="become-a-partner">
+                                        <h3 class="text-center text-uppercase">Become a Partner 2</h3>
+                                        <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+                                            quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                                            Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.</p>
+                                        <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.
+                                            Sed non mauris vitae erat consequat auctor eu in elit. </p>
+                                        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                                            himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum
+                                            sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum
+                                            fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas
+                                            quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 float-left">
+                                    <div class="partner-img">
+                                        <img src="./images/masjid_03.jpg" alt="masjid" />
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 float-left">
+                                    <div class="become-a-partner">
+                                        <h3 class="text-center text-uppercase">Become a Partner 3</h3>
+                                        <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+                                            quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                                            Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.</p>
+                                        <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.
+                                            Sed non mauris vitae erat consequat auctor eu in elit. </p>
+                                        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                                            himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum
+                                            sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum
+                                            fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas
+                                            quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 float-left">
+                                    <div class="partner-img">
+                                        <img src="./images/masjid_03.jpg" alt="masjid" />
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 float-left">
+                                    <div class="become-a-partner">
+                                        <h3 class="text-center text-uppercase">Become a Partner 4</h3>
+                                        <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+                                            quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                                            Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.</p>
+                                        <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.
+                                            Sed non mauris vitae erat consequat auctor eu in elit. </p>
+                                        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                                            himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum
+                                            sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum
+                                            fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas
+                                            quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--hadith-of-the-day-container-started-->
+            <div id="carouselExampleIndicators3" class="hadith carousel slide" data-ride="carousel">
+                <div class="container container-padding">
+                    <div class="row no-gutters">
+                        <div class="col-12 col-sm-12">
+                            <h3 class="yellow-waves text-center text-uppercase">Hadith Of the Day</h3>
+                            <ul class="slider-nav carousel-indicators" id="hadith-nav">
+                                <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"><a href="javascript:;"></a></li>
+                                <li data-target="#carouselExampleIndicators3" data-slide-to="1"><a href="javascript:;"></a></li>
+                                <li data-target="#carouselExampleIndicators3" data-slide-to="2"><a href="javascript:;"></a></li>
+                                <li data-target="#carouselExampleIndicators3" data-slide-to="3"><a href="javascript:;"></a></li>
+                                <li data-target="#carouselExampleIndicators3" data-slide-to="4"><a href="javascript:;"></a></li>
+                            </ul>
+                            <div class="nav-arrows carousel-indicators">
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev" id="prev"><img src="./images/arrowleft.png" alt="arrow"/></a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next" id="next"><img src="./images/arrowRight.png" alt="arrow"/></a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12">
+                            <div class="slides">
+                                <div class="carousel-inner">
+                                    <div id="slide-1" class=" carousel-item active testimonial">
+                                        <blockquote>"This theme is purely amazing 1! I’ve been using it for a while now and I wasn’t disappointed
+                                            in anything."
+                                        </blockquote>
+                                        <img src="./images/joint-sc-img.png" alt="person" />
+                                        <p><strong>Salman Khan</strong>Joint Secretary</p>
+                                    </div>
+                                    <div id="slide-1" class=" carousel-item testimonial">
+                                        <blockquote>"This theme is purely amazing 2! I’ve been using it for a while now and I wasn’t disappointed
+                                            in anything."
+                                        </blockquote>
+                                        <img src="./images/joint-sc-img.png" alt="person" />
+                                        <p><strong>Salman Khan</strong>Joint Secretary</p>
+                                    </div>
+                                    <div id="slide-1" class=" carousel-item testimonial">
+                                        <blockquote>"This theme is purely amazing 3! I’ve been using it for a while now and I wasn’t disappointed
+                                            in anything."
+                                        </blockquote>
+                                        <img src="./images/joint-sc-img.png" alt="person" />
+                                        <p><strong>Salman Khan</strong>Joint Secretary</p>
+                                    </div>
+                                    <div id="slide-1" class=" carousel-item testimonial">
+                                        <blockquote>"This theme is purely amazing 4! I’ve been using it for a while now and I wasn’t disappointed
+                                            in anything."
+                                        </blockquote>
+                                        <img src="./images/joint-sc-img.png" alt="person" />
+                                        <p><strong>Salman Khan</strong>Joint Secretary</p>
+                                    </div>
+                                    <div id="slide-1" class=" carousel-item testimonial">
+                                        <blockquote>"This theme is purely amazing 5! I’ve been using it for a while now and I wasn’t disappointed
+                                            in anything."
+                                        </blockquote>
+                                        <img src="./images/joint-sc-img.png" alt="person" />
+                                        <p><strong>Salman Khan</strong>Joint Secretary</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--footer-section-started-->
+            <footer>
+                <div class="container container-padding">
+                    <div class="row no-gutters">
+                        <div class="col-12 col-sm-12 col-md-1 col-lg-1">
+                            <h3>Payment <span>Methods</span></h3>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-7 col-lg-7">
+                            <ul>
+                                <li><a href="#"><img src="./images/payPal.png" alt="pay-card"/></a></li>
+                                <li><a href="#"><img src="./images/ebay.png" alt="pay-card"/></a></li>
+                                <li><a href="#"><img src="./images/citus.png" alt="pay-card"/></a></li>
+                                <li><a href="#"><img src="./images/visa.png" alt="pay-card"/></a></li>
+                                <li><a href="#"><img src="./images/discover.png" alt="pay-card"/></a></li>
+                                <li><a href="#"><img src="./images/g-pay.png" alt="pay-card"/></a></li>
+                                <li><a href="#"><img src="./images/master-card.png" alt="pay-card"/></a></li>
+                                <li><a href="#"><img src="./images/maestro.png" alt="pay-card"/></a></li>
+                                <li><a href="#"><img src="./images/solo.png" alt="pay-card"/></a></li>
+                                <li><a href="#"><img src="./images/wstrn-union.png" alt="pay-card"/></a></li>
+                                <li><a href="#"><img src="./images/2co.png" alt="pay-card"/></a></li>
+                                <li><a href="#"><img src="./images/whitecard.png" alt="pay-card"/></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                            <form>
+                                <label>Newsletter Subscribe</label>
+                                <input type="email" id="info-email" placeholder="info@example.com" />
+                                <button type="submit"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+                            <div class="links">
+                                <h3>Quick Links</h3>
+                                <ul>
+                                    <li><a href="./index.html">Home</a></li>
+                                    <li><a href="./about.html">About</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+                            <div class="links">
+                                <h3>Popular Links</h3>
+                                <ul>
+                                    <li><a href="#">Regions/Areas</a></li>
+                                    <li><a href="#">Events</a></li>
+                                    <li><a href="#">Ask Imam</a></li>
+                                    <li><a href="#">Weekends School</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+                            <div class="social-network">
+                                <h3>Social Network</h3>
+                                <ul>
+                                    <li><a href="#" class="fa fa-facebook">Facebook</a></li>
+                                    <li><a href="#" class="fa fa-twitter">Twitter</a></li>
+                                    <li><a href="#" class="fa fa-linkedin">LinkedIn</a></li>
+                                    <li><a href="#" class="fa fa-google-plus">Google Plus</a></li>
+                                    <li><a href="#" class="fa fa-instagram">Instagram</a></li>
+                                    <li><a href="#" class="fa fa-youtube">Youtube</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+                            <div class="get-in-touch">
+                                <h3>Get in Touch</h3>
+                                <p>Suite 123, Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
+                                    auctor.
+                                </p>
+                                <span>Email: <a href="#">info@purelyhealth.com</a></span>
+                                <span>Phone: <a href="#">+1 123 456 78</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br style="clear: both" />
+            </footer>
+            <div class="ft-reserved">
+                <div class="container container-padding">
+                    <div class="row no-gutters">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 text-left">
+                            <span>&copy; All rights reserved TMC 2015.</span>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 text-right">
+                            <span>Designed by: AppBakerz</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

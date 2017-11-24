@@ -1,0 +1,43 @@
+$font-size: 12px;
+$primary-color: #091a48;
+$secondary-color: #ffffff;
+$para-color:#333333;
+$bg-color: #f9bf00;
+$sec-bg-color: #051133;
+$about-font-clr: #161944;
+
+
+@mixin borderRadius($radius){
+    border-radius: $radius;
+    -moz-border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -o-border-radius: $radius;
+}
+
+@mixin heading($fontsize) {
+    text-transform: uppercase;
+    font-size: $fontsize;
+    font-weight: 800;
+    text-align: center;
+    margin: 0 0 20px 0;
+    color: $primary-color;
+}
+
+// events-page-styling-starts
+.page-slider{
+    height: 400px;
+    .regions-slide{
+        padding: 178px 0 141px;
+        background: url("../images/blog-banner.png") no-repeat;
+        background-size: cover;
+        h1{
+            font-size: $font-size + 48;
+            font-weight: 800;
+            letter-spacing: -3px;
+            text-align: center;
+            margin: 0;
+            color: $secondary-color;
+            text-shadow: -7px -2px 18px #2e2c3e;
+        }
+    }
+}

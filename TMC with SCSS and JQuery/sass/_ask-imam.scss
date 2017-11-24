@@ -1,0 +1,198 @@
+$font-size: 12px;
+$primary-color: #091a48;
+$secondary-color: #ffffff;
+$para-color:#333333;
+$bg-color: #f9bf00;
+$sec-bg-color: #051133;
+$about-font-clr: #161944;
+
+
+@mixin borderRadius($radius){
+    border-radius: $radius;
+    -moz-border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -o-border-radius: $radius;
+}
+
+@mixin heading($fontsize) {
+    text-transform: uppercase;
+    font-size: $fontsize;
+    font-weight: 800;
+    text-align: center;
+    margin: 0 0 20px 0;
+    color: $primary-color;
+}
+
+// ask-imam-page-styling-starts
+.page-slider{
+    height: 400px;
+    .askimam-slide{
+        padding: 178px 0 141px;
+        background: url(../images/askimam-banner.png) no-repeat;
+        background-size: cover;
+        h1{
+            font-size: $font-size + 48;
+            font-weight: 800;
+            letter-spacing: -3px;
+            text-align: center;
+            margin: 0;
+            color: $secondary-color;
+            text-shadow: -7px -2px 18px #2e2c3e;
+        }
+    }
+}
+
+// askimam-container-styling-startes
+.askimam-container{
+    padding: 58px 0;
+    background-color: $secondary-color;
+    .qs-about-islam{
+        float: left;
+        width: 690px;
+        h3{
+            @include heading(33px);
+            text-align: left;
+            margin: 0 0 35px 0;
+        }
+        h4{
+            text-transform: uppercase;
+            font-size: $font-size + 12;
+            font-weight: 600;
+            margin: 0 0 5px 0;
+            color: #999999;
+            strong{
+                font-size: $font-size + 8;
+                font-weight: 600;
+                margin: 0 0 0 35px;
+                color: $primary-color;
+                text-shadow: 0 0 0 #bdc2ce;
+            }
+        }
+        h5{
+            float: left;
+            width: 70px;
+            text-transform: uppercase;
+            font-size: $font-size + 12;
+            font-weight: 600;
+            margin: 0 0 5px 0;
+            color: #999999;
+        }
+        span{
+            display: block;
+            font-size: $font-size + 1;
+            font-weight: 400;
+            margin:  0 0 35px 70px;
+            color: #999999;
+            strong{
+                font-weight: 800;
+                margin: 0 18px 0 3px;
+                color: $primary-color;
+                text-shadow: 0 0 0 #bdc2ce;
+            }
+        }
+        p{
+            float: left;
+            width: 590px;
+            font-size: $font-size + 1;
+            font-weight: 400;
+            line-height: 22px;
+            margin: 0;
+            padding: 0 20px 10px 0;
+            color: $para-color;
+            text-shadow: 0 0 0 #737373;
+        }
+        .question-form{
+            float: left;
+            width: 100%;
+            h3{
+                @include heading(33px);
+                text-align: left;
+                margin-top: 20px;
+            }
+            #leave-a-qs{
+                input{
+                    outline: none;
+                    text-transform: uppercase;
+                    font-size: 13px;
+                    font-weight: 400;
+                    width: 165px;
+                    height: 50px;
+                    padding: 0 20px;
+                    margin: 0 22px 30px 0;
+                    color: #999;
+                    background-color: #fff;
+                    border-radius: 8px;
+                    border: 1px solid #dddddd;
+                    &::placeholder{
+                        color: #999;
+                    }
+                    &:nth-of-type(3){
+                        margin-right: 0;
+                    }
+                }
+                textarea{
+                    outline: none;
+                    resize: none;
+                    text-transform: uppercase;
+                    font-family: inherit;
+                    font-size: 13px;
+                    font-weight: 400;
+                    width: 633px;
+                    height: 278px;
+                    padding: 25px 20px 0;
+                    margin: 0;
+                    color: #999;
+                    background-color: #fff;
+                    border-radius: 8px;
+                    border: 1px solid #dddddd;
+                    &::placeholder{ 
+                        color: #999;
+                        text-shadow: 0 0 0 #cfcfcf;
+                    }
+                }
+                button{
+                    cursor: pointer;
+                    font-size: 18px;
+                    font-weight: 400;
+                    margin-top: 25px;
+                    padding: 12px 16px;
+                    color: $secondary-color;
+                    background-color: $primary-color;
+                    border: none;
+                    border-radius: 4px;
+                    text-transform: uppercase;
+                    text-shadow: 0 0 0 #9da3b6;
+                }
+            }
+        }
+    }
+    .aside-askimam{
+        float: left;
+        width: 390px;
+        padding: 58px 60px 85px 20px;
+        background-color: #f3f3f3;
+        border-bottom: 1px solid #cecece;
+        h3{
+            @include heading(33px);
+            text-align: left;
+            span{
+                text-transform: lowercase;
+            }
+        }
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            li{
+                margin: 0 0 40px 0;
+                a{
+                    text-transform: uppercase;
+                    font-size: $font-size + 4;
+                    font-weight: 400;
+                    color: $primary-color;
+                    text-shadow: 0 0 0 #bdc2ce;
+                }
+            }
+        }
+    }
+}

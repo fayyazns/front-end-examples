@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TMC</title>
+
+    <!-- css files -->
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- font-awesome-link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- font-family-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--header-portion-started-->
+    <header>
+        <section class="top-section">
+            <div class="inner-container">
+                <div class="logo">
+                    <img src="./images/tmc-logo_02.jpg" alt="Logo" />
+                </div>
+                <div class="search-box">
+                    <form>
+                        <select name="select-bar" id="select-bar">
+                            <option value="english">EN</option>
+                            <option value="urdu">URD</option>
+                            <option value="spanish" >SPN</option>
+                            <option value="turkish">TUR</option>
+                        </select>
+                    </form>
+                    <div class="menu-bars">
+                        <i class="fa fa-bars" id="top-menu-bar" aria-hidden="true"></i>
+                    </div>
+                    <div class="menu-bars-dropdown">
+                        <form class="dropdown-form">
+                            <input type="radio" name="find" value="find-a-mosque" checked>
+                            <label for="radio"> Find A Mosk</label>
+                            <input type="radio" name="find" value="prayer-time">
+                            <label for="radio"> Prayer Time</label>
+                            <input type="radio" name="find" value="quran-verses">
+                            <label for="radio"> Verses</label>
+                            <input type="radio" name="find" value="faqs">
+                            <label for="radio"> FAQs</label>
+                            <select name="country-bar" class="dropdown-select-bar">
+                                <option value="country">Country</option>
+                                <option value="country">Pakistan</option>
+                                <option value="country">Saudi Arabia</option>
+                                <option value="country">Qatar</option>
+                            </select>
+                            <select name="city-bar" class="dropdown-select-bar">
+                                <option value="city">City</option>
+                                <option value="city">Karachi</option>
+                                <option value="city">Madina</option>
+                                <option value="city">Doha</option>
+                            </select>
+                            <input type="text" placeholder="Region/Area*" required>
+                            <button type="submit">Search</button>
+                        </form>
+                    </div>
+                    <form class="for-mquery">
+                        <input type="text" id="search-text-input" />
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                    <a href="javascript:;">ADD MOSQ</a>
+                    <div class="add-mosk-dropdown">
+                        <form class="add-mosq-form">
+                            <input type="text" placeholder="Mosk Name*" required>
+                            <input type="number" placeholder="Phone*" required>
+                            <input type="text" placeholder="P.O Box Number*" required>
+                            <select name="country-bar" class="dropdown-select-bar">
+                                <option value="country">Country</option>
+                                <option value="country">Pakistan</option>
+                                <option value="country">Saudi Arabia</option>
+                                <option value="country">Qatar</option>
+                            </select>
+                            <select name="city-bar" class="dropdown-select-bar">
+                                <option value="city">City</option>
+                                <option value="city">Karachi</option>
+                                <option value="city">Madina</option>
+                                <option value="city">Doha</option>
+                            </select>
+                            <input type="text" placeholder="Region/Area*" required>
+                            <input type="text" placeholder="Address">
+                            <button type="submit"> + Add</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="social-media">
+                    <a href="#" class="fa fa-facebook" title="Facebook"></a>
+                    <a href="#" class="fa fa-twitter" title="Twitter"></a>
+                    <a href="#" class="fa fa-linkedin" title="LinkedIn"></a>
+                    <a href="#" class="fa fa-google-plus" title="Google Plus"></a>
+                    <a href="#" class="fa fa-instagram" title="Instagram"></a>
+                    <a href="#" class="fa fa-youtube" title="Youtube"></a>
+                </div>
+            </div>
+            <br style="clear: both">
+        </section>
+        <nav class="nav-section">
+            <div class="inner-container">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html" class="active">About</a></li>
+                    <li><a href="./regions-areas.html">Regions/Areas</a></li>
+                    <li><a href="./events.html">Events</a></li>
+                    <li><a href="./ask-imam.html">Ask Imam</a></li>
+                    <li><a href="./weekend-school.html">Weekend School</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li id="donate"><a href="./donate-now.html">Donate Now</a></li>
+                </ul>
+                <ul class="dropdown">
+                    <li><a href="#">Home</a>
+                        <ul class="dropdown-nav">
+                            <li><a href="./about.html" class="active">About</a></li>
+                            <li><a href="#">Regions/Areas</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Ask Imam</a></li>
+                            <li><a href="#">Weekend School</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li id="donate"><a href="#">Donate Now</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--slider-started-->
+        <section class="page-slider">
+            <div class="about-slide">
+                <div class="inner-container">
+                    <h1>About Muslim Connection</h1>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!--header-portion-ended-->
+
+    <!-- about-our-communty-started -->
+    <section class="about-our-community">
+        <div class="inner-container">
+            <h3 class="yellow-waves">Find Out More About Our Community</h3>
+            <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi
+                elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet
+                mauris.
+            </p>
+            <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat
+                auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed
+                ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris
+                egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.
+            </p>
+            <h3>Our Mission and Vision</h3>
+            <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi
+                elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet
+                mauris.
+            </p>
+            <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat
+                auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed
+                ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris
+                egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.
+            </p>
+        </div>
+    </section>
+
+    <!--our-members-section-started  -->
+    <section class="our-members">
+        <div class="inner-container">
+            <h3>Our Members</h3>
+            <ul class="slider-nav" id="our-members-nav">
+                <li class="active"><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+            </ul>
+            <div class="members-detail active" id="members-1">
+                <div class="member">
+                    <img src="./images/member1.png" alt="member">
+                    <h5>Mohammed Asif <span>Co-Founder</span></h5>
+                    <div class="members-links">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </div>
+                </div>
+                <div class="member">
+                    <img src="./images/member2.png" alt="member">
+                    <h5>Naseer Uddin Shah <span>Chairman</span></h5>
+                    <div class="members-links">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </div>
+                </div>
+                <div class="member">
+                    <img src="./images/member3.png" alt="member">
+                    <h5>Kulsoom Naz <span>Manager</span></h5>
+                    <div class="members-links">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </div>
+                </div>
+                <div class="member">
+                    <img src="./images/member4.png" alt="member">
+                    <h5>Bashir Khan<span>Supervisor</span></h5>
+                    <div class="members-links">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="members-detail" id="members-2">
+                <div class="member">
+                    <img src="./images/member2.png" alt="member">
+                    <h5>Mohammed Asif <span>Co-Founder</span></h5>
+                    <div class="members-links">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </div>
+                </div>
+                <div class="member">
+                    <img src="./images/member4.png" alt="member">
+                    <h5>Naseer Uddin Shah <span>Chairman</span></h5>
+                    <div class="members-links">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </div>
+                </div>
+                <div class="member">
+                    <img src="./images/member1.png" alt="member">
+                    <h5>Mohammed Asif <span>Co-Founder</span></h5>
+                    <div class="members-links">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </div>
+                </div>
+                <div class="member">
+                    <img src="./images/member3.png" alt="member">
+                    <h5>Kulsoom Naz <span>Manager</span></h5>
+                    <div class="members-links">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="members-detail" id="members-3">
+                <div class="member">
+                    <img src="./images/member1.png" alt="member">
+                    <h5>Mohammed Asif <span>Co-Founder</span></h5>
+                    <div class="members-links">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </div>
+                </div>
+                <div class="member">
+                    <img src="./images/member3.png" alt="member">
+                    <h5>Kulsoom Naz <span>Manager</span></h5>
+                    <div class="members-links">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </div>
+                </div>
+                <div class="member">
+                    <img src="./images/member2.png" alt="member">
+                    <h5>Mohammed Asif <span>Co-Founder</span></h5>
+                    <div class="members-links">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </div>
+                </div>
+                <div class="member">
+                    <img src="./images/member4.png" alt="member">
+                    <h5>Bashir Khan<span>Supervisor</span></h5>
+                    <div class="members-links">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="members-detail" id="members-4">
+                <div class="member">
+                    <img src="./images/member2.png" alt="member">
+                    <h5>Mohammed Asif <span>Co-Founder</span></h5>
+                    <div class="members-links">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </div>
+                </div>
+                <div class="member">
+                    <img src="./images/member1.png" alt="member">
+                    <h5>Naseer Uddin Shah <span>Chairman</span></h5>
+                    <div class="members-links">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </div>
+                </div>
+                <div class="member">
+                    <img src="./images/member4.png" alt="member">
+                    <h5>Mohammed Asif <span>Co-Founder</span></h5>
+                    <div class="members-links">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </div>
+                </div>
+                <div class="member">
+                    <img src="./images/member3.png" alt="member">
+                    <h5>Kulsoom Naz <span>Manager</span></h5>
+                    <div class="members-links">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br style="clear: both">
+    </section>
+    <!--join-tmc-section-started-->
+    <section class="join-tmc">
+        <div class="inner-container">
+            <h3>Join The TMC Community</h3>
+            <a href="#">Join Now</a>
+        </div>
+    </section>
+
+    <!--subscribe-section-started-->
+    <section class="subscribe-tmc">
+        <div class="inner-container">
+            <h3 class="yellow-waves">Subscribe To TMC @USF</h3>
+            <form>
+                <input type="text" id="name" placeholder="Your Name Goes Here" />
+                <label for="email"></label>
+                <input type="text" id="email" placeholder="Your Email Address" />
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!--our-partners-section-started-->
+    <section class="our-partners">
+        <div class="inner-container">
+            <h3 class="yellow-waves">Our Partners</h3>
+            <ul class="slider-nav" id="our-partner-nav">
+                <li class="active"><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+            </ul>
+            <div id="partner-1" class="partner-description active">
+                <div class="partner-img">
+                    <img src="./images/masjid_03.jpg" alt="masjid" />
+                </div>
+                <div class="become-a-partner">
+                    <h3>Become a Partner 1</h3>
+                    <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+                        nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus
+                        a sit amet mauris.</p>
+                    <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae
+                        erat consequat auctor eu in elit. </p>
+                    <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in
+                        erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed
+                        ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat,
+                        velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+                </div>
+            </div>
+            <div id="partner-2" class="partner-description">
+                <div class="partner-img">
+                    <img src="./images/masjid_03.jpg" alt="masjid" />
+                </div>
+                <div id="partner-2" class="become-a-partner">
+                    <h3>Become a Partner 2</h3>
+                    <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+                        nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus
+                        a sit amet mauris.</p>
+                    <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae
+                        erat consequat auctor eu in elit. </p>
+                    <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in
+                        erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed
+                        ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat,
+                        velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+                </div>
+            </div>
+            <div id="partner-3" class="partner-description">
+                <div class="partner-img">
+                    <img src="./images/masjid_03.jpg" alt="masjid" />
+                </div>
+                <div class="become-a-partner">
+                    <h3>Become a Partner 3</h3>
+                    <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+                        nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus
+                        a sit amet mauris.</p>
+                    <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae
+                        erat consequat auctor eu in elit. </p>
+                    <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in
+                        erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed
+                        ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat,
+                        velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+                </div>
+            </div>
+            <div id="partner-4" class="partner-description">
+                <div class="partner-img">
+                    <img src="./images/masjid_03.jpg" alt="masjid" />
+                </div>
+                <div class="become-a-partner">
+                    <h3>Become a Partner 4</h3>
+                    <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+                        nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus
+                        a sit amet mauris.</p>
+                    <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae
+                        erat consequat auctor eu in elit. </p>
+                    <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in
+                        erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed
+                        ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat,
+                        velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+                </div>
+            </div>
+        </div>
+        <br style="clear: both" />
+    </section>
+
+    <!--footer-section-started-->
+    <footer>
+        <div class="inner-container">
+            <div class="payment-methods">
+                <h3>Payment <span>Methods</span></h3>
+                <ul>
+                    <li><a href="#"><img src="./images/payPal.png" alt="pay-card"/></a></li>
+                    <li><a href="#"><img src="./images/ebay.png" alt="pay-card"/></a></li>
+                    <li><a href="#"><img src="./images/citus.png" alt="pay-card"/></a></li>
+                    <li><a href="#"><img src="./images/visa.png" alt="pay-card"/></a></li>
+                    <li><a href="#"><img src="./images/discover.png" alt="pay-card"/></a></li>
+                    <li><a href="#"><img src="./images/g-pay.png" alt="pay-card"/></a></li>
+                    <li><a href="#"><img src="./images/master-card.png" alt="pay-card"/></a></li>
+                    <li><a href="#"><img src="./images/maestro.png" alt="pay-card"/></a></li>
+                    <li><a href="#"><img src="./images/solo.png" alt="pay-card"/></a></li>
+                    <li><a href="#"><img src="./images/wstrn-union.png" alt="pay-card"/></a></li>
+                    <li><a href="#"><img src="./images/2co.png" alt="pay-card"/></a></li>
+                    <li><a href="#"><img src="./images/whitecard.png" alt="pay-card"/></a></li>
+                </ul>
+                <form>
+                    <label>Newsletter Subscribe</label>
+                    <input type="email" id="info-email" placeholder="info@example.com" />
+                    <button type="submit"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                </form>
+            </div>
+            <div class="connections">
+                <div class="links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="links">
+                    <h3>Popular Links</h3>
+                    <ul>
+                        <li><a href="#">Regions/Areas</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Ask Imam</a></li>
+                        <li><a href="#">Weekends School</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="social-network">
+                    <h3>Social Network</h3>
+                    <ul>
+                        <li><a href="#" class="fa fa-facebook">Facebook</a></li>
+                        <li><a href="#" class="fa fa-twitter">Twitter</a></li>
+                        <li><a href="#" class="fa fa-linkedin">LinkedIn</a></li>
+                        <li><a href="#" class="fa fa-google-plus">Google Plus</a></li>
+                        <li><a href="#" class="fa fa-instagram">Instagram</a></li>
+                        <li><a href="#" class="fa fa-youtube">Youtube</a></li>
+                    </ul>
+                </div>
+                <div class="get-in-touch">
+                    <h3>Get in Touch</h3>
+                    <p>Suite 123, Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor.</p>
+                    <span>Email: <a href="#">info@purelyhealth.com</a></span>
+                    <span>Phone: <a href="#">+1 123 456 78</a></span>
+                </div>
+            </div>
+        </div>
+        <br style="clear: both" />
+    </footer>
+    <div class="ft-reserved">
+        <div class="inner-container">
+            <span>&copy; All rights reserved TMC 2015.</span>
+            <span>Designed by: AppBakerz</span>
+        </div>
+        <br style="clear: both" />
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+    <!-- slick-lib -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script src="./app.js"></script>
+
+</body>
+
+</html>

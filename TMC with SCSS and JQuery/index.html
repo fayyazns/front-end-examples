@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TMC</title>
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- font-awesome-link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- font-family-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
+
+    <!-- slick-slider -->
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
+
+</head>
+
+<body>
+    <!--header-portion-started-->
+    <header>
+        <section class="top-section">
+            <div class="inner-container">
+                <div class="logo">
+                    <img src="./images/tmc-logo_02.jpg" alt="Logo" />
+                </div>
+                <div class="search-box">
+                    <form>
+                        <select name="select-bar" id="select-bar">
+                            <option value="english">EN</option>
+                            <option value="urdu">URD</option>
+                            <option value="spanish" >SPN</option>
+                            <option value="turkish">TUR</option>
+                        </select>
+                    </form>
+                    <div class="menu-bars">
+                        <i class="fa fa-bars" id="top-menu-bar" aria-hidden="true"></i>
+                    </div>
+                    <div class="menu-bars-dropdown">
+                        <form class="dropdown-form">
+                            <input type="radio" name="find" value="find-a-mosque" checked>
+                            <label for="radio"> Find A Mosk</label>
+                            <input type="radio" name="find" value="prayer-time">
+                            <label for="radio"> Prayer Time</label>
+                            <input type="radio" name="find" value="quran-verses">
+                            <label for="radio"> Verses</label>
+                            <input type="radio" name="find" value="faqs">
+                            <label for="radio"> FAQs</label>
+                            <select name="country-bar" class="dropdown-select-bar">
+                                <option value="country">Country</option>
+                                <option value="country">Pakistan</option>
+                                <option value="country">Saudi Arabia</option>
+                                <option value="country">Qatar</option>
+                            </select>
+                            <select name="city-bar" class="dropdown-select-bar">
+                                <option value="city">City</option>
+                                <option value="city">Karachi</option>
+                                <option value="city">Madina</option>
+                                <option value="city">Doha</option>
+                            </select>
+                            <input type="text" placeholder="Region/Area*" required>
+                            <button type="submit">Search</button>
+                        </form>
+                    </div>
+                    <form class="for-mquery">
+                        <input type="text" id="search-text-input" />
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                    <a href="javascript:;">ADD MOSQ</a>
+                    <div class="add-mosk-dropdown">
+                        <form class="add-mosq-form">
+                            <input type="text" placeholder="Mosk Name*" required>
+                            <input type="number" placeholder="Phone*" required>
+                            <input type="text" placeholder="P.O Box Number*" required>
+                            <select name="country-bar" class="dropdown-select-bar">
+                                <option value="country">Country</option>
+                                <option value="country">Pakistan</option>
+                                <option value="country">Saudi Arabia</option>
+                                <option value="country">Qatar</option>
+                            </select>
+                            <select name="city-bar" class="dropdown-select-bar">
+                                <option value="city">City</option>
+                                <option value="city">Karachi</option>
+                                <option value="city">Madina</option>
+                                <option value="city">Doha</option>
+                            </select>
+                            <input type="text" placeholder="Region/Area*" required>
+                            <input type="text" placeholder="Address">
+                            <button type="submit"> + Add</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="social-media">
+                    <a href="#" class="fa fa-facebook" title="Facebook"></a>
+                    <a href="#" class="fa fa-twitter" title="Twitter"></a>
+                    <a href="#" class="fa fa-linkedin" title="LinkedIn"></a>
+                    <a href="#" class="fa fa-google-plus" title="Google Plus"></a>
+                    <a href="#" class="fa fa-instagram" title="Instagram"></a>
+                    <a href="#" class="fa fa-youtube" title="Youtube"></a>
+                </div>
+            </div>
+            <br style="clear: both">
+        </section>
+        <nav class="nav-section">
+            <div class="inner-container">
+                <ul>
+                    <li><a href="./index.html" class="active">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./regions-areas.html">Regions/Areas</a></li>
+                    <li><a href="./events.html">Events</a></li>
+                    <li><a href="./ask-imam.html">Ask Imam</a></li>
+                    <li><a href="./weekend-school.html">Weekend School</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li id="donate"><a href="./donate-now.html">Donate Now</a></li>
+                </ul>
+                <ul class="dropdown">
+                    <li><a href="#">Home</a>
+                        <ul class="dropdown-nav">
+                            <li><a href="./about.html">About</a></li>
+                            <li><a href="#">Regions/Areas</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Ask Imam</a></li>
+                            <li><a href="#">Weekend School</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li id="donate"><a href="#">Donate Now</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!--slider-started-->
+        <section class="slider">
+            <div class="slide">
+                <div class="inner-container">
+                    <h1>The Muslim Connection 1</h1>
+                    <ul>
+                        <li>Proin gravida nibh vel velit auctor aliquet aenean.</li>
+                        <li>Sollicitudin, lorem quis bibendum auctor nisi.</li>
+                        <li>Consequat ipsum, nec sagittis sem nibh.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="inner-container">
+                    <h1>The Muslim Connection 2</h1>
+                    <ul>
+                        <li>Proin gravida nibh vel velit auctor aliquet aenean.</li>
+                        <li>Sollicitudin, lorem quis bibendum auctor nisi.</li>
+                        <li>Consequat ipsum, nec sagittis sem nibh.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="inner-container">
+                    <h1>The Muslim Connection 3</h1>
+                    <ul>
+                        <li>Proin gravida nibh vel velit auctor aliquet aenean.</li>
+                        <li>Sollicitudin, lorem quis bibendum auctor nisi.</li>
+                        <li>Consequat ipsum, nec sagittis sem nibh.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="inner-container">
+                    <h1>The Muslim Connection 4</h1>
+                    <ul>
+                        <li>Proin gravida nibh vel velit auctor aliquet aenean.</li>
+                        <li>Sollicitudin, lorem quis bibendum auctor nisi.</li>
+                        <li>Consequat ipsum, nec sagittis sem nibh.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!--header-portion-ended-->
+
+    <!--middle-container-started-->
+    <section class="middle-container">
+        <div class="inner-container">
+            <section class="ask-banner">
+                <h2><strong>TMC</strong>The Muslim Connection</h2>
+                <div class="banner-text">
+                    <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+                        nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus
+                        a sit amet mauris.
+                    </p>
+                    <a href="#">Ask Imam</a>
+                </div>
+                <br style="clear: both" />
+            </section>
+            <section class="home-boxes">
+                <div class="boxes-description">
+                    <i class="fa fa-search"></i>
+                    <h3>Find Events</h3>
+                    <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+                        nisi elit consequat </p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="boxes-description">
+                    <h3><span></span>Qoran Recitation</h3>
+                    <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+                        nisi elit consequat </p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="boxes-description">
+                    <h3><span></span>Hadith & Sunnah</h3>
+                    <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+                        nisi elit consequat </p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="boxes-description">
+                    <h3><span></span>Video Sermons</h3>
+                    <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+                        nisi elit consequat </p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="boxes-description">
+                    <h3><span></span>Donation</h3>
+                    <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+                        nisi elit consequat </p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="boxes-description">
+                    <h3><span></span>Sisters</h3>
+                    <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+                        nisi elit consequat </p>
+                    <a href="#">Read More</a>
+                </div>
+                <br style="clear: both" />
+            </section>
+        </div>
+    </section>
+
+    <!--urgent-donation section-started-->
+    <section class="urgent-donation" id="urgent-donation-section">
+        <div class="inner-container">
+            <h3 class="yellow-waves">Urgent Donations</h3>
+            <ul class="slider-nav" id="urgnt-dontn-nav">
+                <li class="active"><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+            </ul>
+            <div id="donation-slide-1" class="help-to-build active">
+                <div class="ict-masjid">
+                    <h3>Help Build ICT Masjid 1</h3>
+                    <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+                        nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus
+                        a sit amet mauris.
+                    </p>
+                    <div class="table-scroll">
+                        <table cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td><strong>33% </strong>Funded</td>
+                                <td><strong>$18900 </strong>Pledged</td>
+                                <td><strong>$56800 </strong>Goal</td>
+                                <td><strong>967 </strong>Backers</td>
+                                <td><strong>321 </strong>Days to go</td>
+                            </tr>
+                            <tr>
+                                <td colspan="5">
+                                    <a href="#" class="plus"> + </a>
+                                    <div class="progress-bar">
+                                        <strong>Over All</strong>
+                                        <div class="progress">
+                                            <span>40% Funded</span> 80 Days Left
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5">
+                                    <a href="#" class="donate-btn">Donate for this project</a>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="masjid-img">
+                    <img src="./images/masjid_03.jpg" alt="Masjid" />
+                </div>
+            </div>
+            <div id="donation-slide-2" class="help-to-build">
+                <div class="ict-masjid">
+                    <h3>Help Build ICT Masjid 2</h3>
+                    <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+                        nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus
+                        a sit amet mauris.
+                    </p>
+                    <div class="table-scroll">
+                        <table cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td><strong>33% </strong>Funded</td>
+                                <td><strong>$18900 </strong>Pledged</td>
+                                <td><strong>$56800 </strong>Goal</td>
+                                <td><strong>967 </strong>Backers</td>
+                                <td><strong>321 </strong>Days to go</td>
+                            </tr>
+                            <tr>
+                                <td colspan="5">
+                                    <a href="#" class="plus"> + </a>
+                                    <div class="progress-bar">
+                                        <strong>Over All</strong>
+                                        <div class="progress">
+                                            <span>40% Funded</span> 80 Days Left
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5">
+                                    <a href="#" class="donate-btn">Donate for this project</a>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="masjid-img">
+                    <img src="./images/masjid_03.jpg" alt="Masjid" />
+                </div>
+            </div>
+            <div id="donation-slide-3" class="help-to-build">
+                <div class="ict-masjid">
+                    <h3>Help Build ICT Masjid 3</h3>
+                    <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+                        nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus
+                        a sit amet mauris.
+                    </p>
+                    <div class="table-scroll">
+                        <table cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td><strong>33% </strong>Funded</td>
+                                <td><strong>$18900 </strong>Pledged</td>
+                                <td><strong>$56800 </strong>Goal</td>
+                                <td><strong>967 </strong>Backers</td>
+                                <td><strong>321 </strong>Days to go</td>
+                            </tr>
+                            <tr>
+                                <td colspan="5">
+                                    <a href="#" class="plus"> + </a>
+                                    <div class="progress-bar">
+                                        <strong>Over All</strong>
+                                        <div class="progress">
+                                            <span>40% Funded</span> 80 Days Left
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5">
+                                    <a href="#" class="donate-btn">Donate for this project</a>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="masjid-img">
+                    <img src="./images/masjid_03.jpg" alt="Masjid" />
+                </div>
+            </div>
+            <div id="donation-slide-4" class="help-to-build">
+                <div class="ict-masjid">
+                    <h3>Help Build ICT Masjid 4</h3>
+                    <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+                        nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus
+                        a sit amet mauris.
+                    </p>
+                    <div class="table-scroll">
+                        <table cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td><strong>33% </strong>Funded</td>
+                                <td><strong>$18900 </strong>Pledged</td>
+                                <td><strong>$56800 </strong>Goal</td>
+                                <td><strong>967 </strong>Backers</td>
+                                <td><strong>321 </strong>Days to go</td>
+                            </tr>
+                            <tr>
+                                <td colspan="5">
+                                    <a href="#" class="plus"> + </a>
+                                    <div class="progress-bar">
+                                        <strong>Over All</strong>
+                                        <div class="progress">
+                                            <span>40% Funded</span> 80 Days Left
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5">
+                                    <a href="#" class="donate-btn">Donate for this project</a>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="masjid-img">
+                    <img src="./images/masjid_03.jpg" alt="Masjid" />
+                </div>
+            </div>
+            <br style="clear: both" />
+        </div>
+    </section>
+
+    <!--for-media-query-urgent-donation-section-started-->
+    <section class="urgent-donation for-md-query-urgent-donation">
+        <div class="inner-container">
+            <h3 class="yellow-waves">Urgent Donations</h3>
+            <ul class="slider-nav">
+                <li class="active"><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+            <div class="help-to-build">
+                <div class="masjid-img">
+                    <img src="./images/masjid_03.jpg" alt="Masjid" />
+                </div>
+                <div class="ict-masjid">
+                    <h3>Help Build ICT Masjid</h3>
+                    <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+                        nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus
+                        a sit amet mauris.
+                    </p>
+                    <div class="table-scroll">
+                        <table cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td><strong>33% </strong>Funded</td>
+                                <td><strong>$18900 </strong>Pledged</td>
+                                <td><strong>$56800 </strong>Goal</td>
+                                <td><strong>967 </strong>Backers</td>
+                                <td><strong>321 </strong>Days to go</td>
+                            </tr>
+                            <tr>
+                                <td colspan="5">
+                                    <a href="#" class="plus"> + </a>
+                                    <div class="progress-bar">
+                                        <strong>Over All</strong>
+                                        <div class="progress">
+                                            <span>40% Funded</span> 80 Days Left
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5">
+                                    <a href="#" class="donate-btn">Donate for this project</a>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <br style="clear: both" />
+        </div>
+    </section>
+
+    <!--join-tmc-section-started-->
+    <section class="join-tmc">
+        <div class="inner-container">
+            <h3>Join The TMC Community</h3>
+            <a href="#">Join Now</a>
+        </div>
+    </section>
+
+    <!--subscribe-section-started-->
+    <section class="subscribe-tmc">
+        <div class="inner-container">
+            <h3 class="yellow-waves">Subscribe To TMC @USF</h3>
+            <form>
+                <input type="text" id="name" placeholder="Your Name Goes Here" />
+                <label for="email"></label>
+                <input type="text" id="email" placeholder="Your Email Address" />
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!--feed-backs-section-started-->
+    <section class="feed-backs">
+        <div class="inner-container">
+            <div class="twitter-feeds">
+                <h2>Twitter Feeds</h2>
+                <div class="users-feedbacks">
+                    <img src="./images/familypic-twitter_07.jpg" alt="Person" />
+                    <h5>Lorem Ipsum</h5>
+                    <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+                        sit amet mauris.
+                    </p>
+                    <ul>
+                        <li><a href="#">Read More</a></li>
+                        <li><i class="fa fa-heart-o" aria-hidden="true"></i><a href="#">50 Likes</a></li>
+                        <li><a href="#">20 Comments</a></li>
+                    </ul>
+                </div>
+                <div class="users-feedbacks">
+                    <img src="./images/brotherhood-twiiter_10.jpg" alt="Person" />
+                    <h5>Lorem Ipsum</h5>
+                    <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+                        sit amet mauris.
+                    </p>
+                    <ul>
+                        <li><a href="#">Read More</a></li>
+                        <li><i class="fa fa-heart-o" aria-hidden="true"></i><a href="#">50 Likes</a></li>
+                        <li><a href="#">20 Comments</a></li>
+                    </ul>
+                </div>
+                <div class="users-feedbacks">
+                    <img src="./images/performslah-twitter_13.jpg" alt="Person" />
+                    <h5>Lorem Ipsum</h5>
+                    <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+                        sit amet mauris.
+                    </p>
+                    <ul>
+                        <li><a href="#">Read More</a></li>
+                        <li><i class="fa fa-heart-o" aria-hidden="true"></i><a href="#">50 Likes</a></li>
+                        <li><a href="#">20 Comments</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="donate-btn">Donate For This Project</a>
+            </div>
+            <div class="faqs-about-islam">
+                <h2>FAQ<span>s</span> About Islam</h2>
+                <ul>
+                    <li class="active">
+                        <h5>Lorem Ipsum <i class="fa fa-angle-down" aria-hidden="true"></i></h5>
+                        <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
+                            auctor, sit amet mauris.</p>
+                    </li>
+                    <li>
+                        <h5>Lorem Ipsum <i class="fa fa-angle-down" aria-hidden="true"></i></h5>
+                        <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
+                            auctor, sit amet mauris.</p>
+                    </li>
+                    <li>
+                        <h5>Gravida nibh vel velit auctor aliquet <i class="fa fa-angle-down" aria-hidden="true"></i></h5>
+                        <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
+                            auctor, sit amet mauris.</p>
+                    </li>
+                    <li>
+                        <h5>Aenean sollicitudin <i class="fa fa-angle-down" aria-hidden="true"></i></h5>
+                        <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
+                            auctor, sit amet mauris.</p>
+                    </li>
+                    <li>
+                        <h5>Nisi elit consequat ipsum <i class="fa fa-angle-down" aria-hidden="true"></i></h5>
+                        <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
+                            auctor, sit amet mauris.</p>
+                    </li>
+                    <li>
+                        <h5>Nec sagittis sem nibh id elit <i class="fa fa-angle-down" aria-hidden="true"></i></h5>
+                        <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
+                            auctor, sit amet mauris.</p>
+                    </li>
+                    <li>
+                        <h5>Duis sed odio sit amet nibh vulputate cursus <i class="fa fa-angle-down" aria-hidden="true"></i></h5>
+                        <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
+                            auctor, sit amet mauris.</p>
+                    </li>
+                    <li>
+                        <h5>A sit amet mauris. Morbi accumsan <i class="fa fa-angle-down" aria-hidden="true"></i></h5>
+                        <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
+                            auctor, sit amet mauris.</p>
+                    </li>
+                </ul>
+            </div>
+            <!-- <div class="faqs-about-islam">
+                <h2>FAQ<span>s</span> About Islam</h2>
+                <ul>
+                    <li class="active">
+                        <h5>Lorem Ipsum <i class="fa fa-angle-down" aria-hidden="true"></i></h5>
+                        <div class="para">
+                            <div class="container">
+                                <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
+                                    bibendum auctor, sit amet mauris.</p>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <h5>Lorem Ipsum <i class="fa fa-angle-down" aria-hidden="true"></i></h5>
+                        <div class="para">
+                            <div class="container">
+                                <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
+                                    bibendum auctor, sit amet mauris.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <h5>Gravida nibh vel velit auctor aliquet <i class="fa fa-angle-down" aria-hidden="true"></i></h5>
+                        <div class="para">
+                            <div class="container">
+                                <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
+                                    bibendum auctor, sit amet mauris.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <h5>Aenean sollicitudin <i class="fa fa-angle-down" aria-hidden="true"></i></h5>
+                        <div class="para">
+                            <div class="container">
+                                <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
+                                    bibendum auctor, sit amet mauris.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <h5>Nisi elit consequat ipsum <i class="fa fa-angle-down" aria-hidden="true"></i></h5>
+                        <div class="para">
+                            <div class="container">
+                                <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
+                                    bibendum auctor, sit amet mauris.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <h5>Nec sagittis sem nibh id elit <i class="fa fa-angle-down" aria-hidden="true"></i></h5>
+                        <div class="para">
+                            <div class="container">
+                                <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
+                                    bibendum auctor, sit amet mauris.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <h5>Duis sed odio sit amet nibh vulputate cursus <i class="fa fa-angle-down" aria-hidden="true"></i></h5>
+                        <div class="para">
+                            <div class="container">
+                                <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
+                                    bibendum auctor, sit amet mauris.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <h5>A sit amet mauris. Morbi accumsan <i class="fa fa-angle-down" aria-hidden="true"></i></h5>
+                        <div class="para">
+                            <div class="container">
+                                <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
+                                    bibendum auctor, sit amet mauris.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div> -->
+        </div>
+        <br style="clear: both" />
+    </section>
+
+    <!--our-gallery-section-started-->
+    <section class="our-gallery">
+        <div class="inner-container">
+            <h3>Our Gallery</h3>
+            <div class="gallery-scroll-md-query">
+                <div class="gallery-main-container">
+                    <div class="images">
+                        <a href="./images/lrg-four.jpg">
+                        <img src="./images/white-cap.png" class="right-margin" alt="gallery"/>
+                    </a>
+                        <a href="./images/lrg-four.jpg">
+                        <img src="./images/person-salah.png" alt="gallery"/>
+                    </a>
+                    </div>
+                    <div class="images">
+                        <a href="./images/lrg-three.jpg">
+                        <img src="./images/girl-blue.png" alt="gallery"/>
+                    </a>
+                        <a href="./images/lrg-four.jpg">
+                        <img src="./images/khana-kaba.png" alt="gallery"/>
+                    </a>
+                        <a href="./images/lrg-ten.jpg">
+                        <img src="./images/holy-quran.png" alt="gallery"/>
+                    </a>
+                    </div>
+                    <div class="images">
+                        <a href="./images/lrg-eleven.jpg">
+                        <img src="./images/little-girl.png" alt="gallery"/>
+                    </a>
+                        <a href="./images/lrg-seven.jpg">
+                        <img src="./images/couples.png" alt="gallery"/>
+                    </a>
+                    </div>
+                    <div class="images">
+                        <a href="./images/lrg-eleven.jpg">
+                        <img src="./images/girl-black.png" alt="gallery"/>
+                    </a>
+                        <a href="./images/lrg-eleven.jpg">
+                        <img src="./images/prayers.png" alt="gallery"/>
+                    </a>
+                    </div>
+                    <div class="images">
+                        <a href="./images/lrg-ten.jpg">
+                        <img src="./images/girls.png" class="position-right" alt="gallery"/>
+                    </a>
+                        <a href="./images/lrg-eleven.jpg">
+                        <img src="./images/family.png" alt="gallery"/>
+                    </a>
+                    </div>
+                </div>
+                <!-- for displaying popup image (lightbox) with light black backroung=d and close button -->
+                <div id="popup-div">
+                </div>
+                <div class="popup-image" id="popuplrg">
+                    <img src="" alt="Popup Pic">
+                    <button id="close-btn" title="close"> x </button>
+                </div>
+            </div>
+        </div>
+        <br style="clear: both" />
+    </section>
+
+    <!--mosks-addresses-section-started-->
+    <section class="mosks-addresses">
+        <div class="inner-container">
+            <div class="mosk-img">
+                <img src="./images/mosk1_03.jpg" alt="Mosk" />
+            </div>
+            <div class="address-detail address-padding-left">
+                <h3>Lorem Ipsum Mosk</h3>
+                <a href="#"><i class="fa fa-map-marker"></i> Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin</a>
+                <a href="#"><i class="fa fa-phone"></i> +1 123 456 78</a>
+                <a href="#"><i class="fa fa-envelope"></i> info@loremispum.com</a>
+            </div>
+            <div class="address-detail address-padding-right">
+                <h3>Lorem Ipsum Mosk</h3>
+                <a href="#"><i class="fa fa-map-marker"></i> Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin</a>
+                <a href="#"><i class="fa fa-phone"></i> +1 123 456 78</a>
+                <a href="#"><i class="fa fa-envelope"></i> info@loremispum.com</a>
+            </div>
+            <div class="mosk-img">
+                <img src="./images/mosk-3_06.jpg" alt="Mosk" />
+            </div>
+            <div class="mosk-img">
+                <img src="./images/mosk-white_06.jpg" alt="Mosk" />
+            </div>
+            <div class="address-detail address-padding-left">
+                <h3>Lorem Ipsum Mosk</h3>
+                <a href="#"><i class="fa fa-map-marker"></i> Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin</a>
+                <a href="#"><i class="fa fa-phone"></i> +1 123 456 78</a>
+                <a href="#"><i class="fa fa-envelope"></i> info@loremispum.com</a>
+            </div>
+            <div class="address-detail address-padding-right">
+                <h3>Lorem Ipsum Mosk</h3>
+                <a href="#"><i class="fa fa-map-marker"></i> Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin</a>
+                <a href="#"><i class="fa fa-phone"></i> +1 123 456 78</a>
+                <a href="#"><i class="fa fa-envelope"></i> info@loremispum.com</a>
+            </div>
+            <div class="mosk-img">
+                <img src="./images/mosk-4_11.jpg" alt="Mosk" />
+            </div>
+        </div>
+        <br style="clear: both" />
+    </section>
+
+
+    <!--for-media-query-display-none  -->
+    <section class="mosks-addresses for-mq-display-none">
+        <div class="inner-container">
+            <div class="mosk-img">
+                <img src="./images/mosk1_03.jpg" alt="Mosk" />
+            </div>
+            <div class="address-detail address-padding-left">
+                <h3>Lorem Ipsum Mosk</h3>
+                <a href="#"><i class="fa fa-map-marker"></i> Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin</a>
+                <a href="#"><i class="fa fa-phone"></i> +1 123 456 78</a>
+                <a href="#"><i class="fa fa-envelope"></i> info@loremispum.com</a>
+            </div>
+            <div class="mosk-img">
+                <img src="./images/mosk-3_06.jpg" alt="Mosk" />
+            </div>
+            <div class="address-detail address-padding-right">
+                <h3>Lorem Ipsum Mosk</h3>
+                <a href="#"><i class="fa fa-map-marker"></i> Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin</a>
+                <a href="#"><i class="fa fa-phone"></i> +1 123 456 78</a>
+                <a href="#"><i class="fa fa-envelope"></i> info@loremispum.com</a>
+            </div>
+            <div class="mosk-img">
+                <img src="./images/mosk-white_06.jpg" alt="Mosk" />
+            </div>
+            <div class="address-detail address-padding-left">
+                <h3>Lorem Ipsum Mosk</h3>
+                <a href="#"><i class="fa fa-map-marker"></i> Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin</a>
+                <a href="#"><i class="fa fa-phone"></i> +1 123 456 78</a>
+                <a href="#"><i class="fa fa-envelope"></i> info@loremispum.com</a>
+            </div>
+            <div class="mosk-img">
+                <img src="./images/mosk-4_11.jpg" alt="Mosk" />
+            </div>
+            <div class="address-detail address-padding-right">
+                <h3>Lorem Ipsum Mosk</h3>
+                <a href="#"><i class="fa fa-map-marker"></i> Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin</a>
+                <a href="#"><i class="fa fa-phone"></i> +1 123 456 78</a>
+                <a href="#"><i class="fa fa-envelope"></i> info@loremispum.com</a>
+            </div>
+        </div>
+        <br style="clear: both" />
+    </section>
+
+    <!--our-partners-section-started-->
+    <section class="our-partners">
+        <div class="inner-container">
+            <h3 class="yellow-waves">Our Partners</h3>
+            <ul class="slider-nav" id="our-partner-nav">
+                <li class="active"><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+            </ul>
+            <div id="partner-1" class="partner-description active">
+                <div class="partner-img">
+                    <img src="./images/masjid_03.jpg" alt="masjid" />
+                </div>
+                <div class="become-a-partner">
+                    <h3>Become a Partner 1</h3>
+                    <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+                        nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus
+                        a sit amet mauris.</p>
+                    <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae
+                        erat consequat auctor eu in elit. </p>
+                    <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in
+                        erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed
+                        ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat,
+                        velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+                </div>
+            </div>
+            <div id="partner-2" class="partner-description">
+                <div class="partner-img">
+                    <img src="./images/masjid_03.jpg" alt="masjid" />
+                </div>
+                <div id="partner-2" class="become-a-partner">
+                    <h3>Become a Partner 2</h3>
+                    <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+                        nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus
+                        a sit amet mauris.</p>
+                    <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae
+                        erat consequat auctor eu in elit. </p>
+                    <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in
+                        erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed
+                        ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat,
+                        velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+                </div>
+            </div>
+            <div id="partner-3" class="partner-description">
+                <div class="partner-img">
+                    <img src="./images/masjid_03.jpg" alt="masjid" />
+                </div>
+                <div class="become-a-partner">
+                    <h3>Become a Partner 3</h3>
+                    <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+                        nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus
+                        a sit amet mauris.</p>
+                    <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae
+                        erat consequat auctor eu in elit. </p>
+                    <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in
+                        erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed
+                        ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat,
+                        velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+                </div>
+            </div>
+            <div id="partner-4" class="partner-description">
+                <div class="partner-img">
+                    <img src="./images/masjid_03.jpg" alt="masjid" />
+                </div>
+                <div class="become-a-partner">
+                    <h3>Become a Partner 4</h3>
+                    <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+                        nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus
+                        a sit amet mauris.</p>
+                    <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae
+                        erat consequat auctor eu in elit. </p>
+                    <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in
+                        erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed
+                        ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat,
+                        velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+                </div>
+            </div>
+        </div>
+        <br style="clear: both" />
+    </section>
+
+    <!--hadith-of-the-day-section-started-->
+    <section class="hadith" id="hadith-section">
+        <div class="inner-container">
+            <h3 class="yellow-waves">Hadith Of the Day</h3>
+            <ul class="slider-nav" id="hadith-nav">
+                <li class="active"><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+            </ul>
+            <div class="nav-arrows">
+                <a href="javascript:;" id="prev"><img src="./images/arrowleft.png" alt="arrow"/></a>
+                <a href="javascript:;" id="next"><img src="./images/arrowRight.png" alt="arrow"/></a>
+            </div>
+
+            <div class="slides">
+                <div id="slide-1" class="testimonial active">
+                    <blockquote>"This theme is purely amazing! I’ve been using it for a while now and I wasn’t disappointed in anything."
+                    </blockquote>
+                    <img src="./images/joint-sc-img.png" alt="person" />
+                    <p><strong>Salman Khan</strong>Joint Secretary</p>
+                </div>
+                <div id="slide-2" class="testimonial">
+                    <blockquote>"for a while now and I wasn’t disappointed in anything."
+                    </blockquote>
+                    <img src="./images/joint-sc-img.png" alt="person" />
+                    <p><strong>Salman Khan</strong>Joint Secretary</p>
+                </div>
+                <div id="slide-3" class="testimonial">
+                    <blockquote>"I’ve been using it for a while now and I wasn’t disappointed in anything."
+                    </blockquote>
+                    <img src="./images/joint-sc-img.png" alt="person" />
+                    <p><strong>Salman Khan</strong>Joint Secretary</p>
+                </div>
+                <div id="slide-4" class="testimonial">
+                    <blockquote>"this is 4th slide."
+                    </blockquote>
+                    <img src="./images/joint-sc-img.png" alt="person" />
+                    <p><strong>Salman Khan</strong>Joint Secretary</p>
+                </div>
+                <div id="slide-5" class="testimonial">
+                    <blockquote>"this is 5th slide."
+                    </blockquote>
+                    <img src="./images/joint-sc-img.png" alt="person" />
+                    <p><strong>Salman Khan</strong>Joint Secretary</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--footer-section-started-->
+    <footer>
+        <div class="inner-container">
+            <div class="payment-methods">
+                <h3>Payment <span>Methods</span></h3>
+                <ul>
+                    <li><a href="#"><img src="./images/payPal.png" alt="pay-card"/></a></li>
+                    <li><a href="#"><img src="./images/ebay.png" alt="pay-card"/></a></li>
+                    <li><a href="#"><img src="./images/citus.png" alt="pay-card"/></a></li>
+                    <li><a href="#"><img src="./images/visa.png" alt="pay-card"/></a></li>
+                    <li><a href="#"><img src="./images/discover.png" alt="pay-card"/></a></li>
+                    <li><a href="#"><img src="./images/g-pay.png" alt="pay-card"/></a></li>
+                    <li><a href="#"><img src="./images/master-card.png" alt="pay-card"/></a></li>
+                    <li><a href="#"><img src="./images/maestro.png" alt="pay-card"/></a></li>
+                    <li><a href="#"><img src="./images/solo.png" alt="pay-card"/></a></li>
+                    <li><a href="#"><img src="./images/wstrn-union.png" alt="pay-card"/></a></li>
+                    <li><a href="#"><img src="./images/2co.png" alt="pay-card"/></a></li>
+                    <li><a href="#"><img src="./images/whitecard.png" alt="pay-card"/></a></li>
+                </ul>
+                <form>
+                    <label>Newsletter Subscribe</label>
+                    <input type="email" id="info-email" placeholder="info@example.com" />
+                    <button type="submit"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                </form>
+            </div>
+            <div class="connections">
+                <div class="links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="links">
+                    <h3>Popular Links</h3>
+                    <ul>
+                        <li><a href="#">Regions/Areas</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Ask Imam</a></li>
+                        <li><a href="#">Weekends School</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="social-network">
+                    <h3>Social Network</h3>
+                    <ul>
+                        <li><a href="#" class="fa fa-facebook">Facebook</a></li>
+                        <li><a href="#" class="fa fa-twitter">Twitter</a></li>
+                        <li><a href="#" class="fa fa-linkedin">LinkedIn</a></li>
+                        <li><a href="#" class="fa fa-google-plus">Google Plus</a></li>
+                        <li><a href="#" class="fa fa-instagram">Instagram</a></li>
+                        <li><a href="#" class="fa fa-youtube">Youtube</a></li>
+                    </ul>
+                </div>
+                <div class="get-in-touch">
+                    <h3>Get in Touch</h3>
+                    <p>Suite 123, Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor.</p>
+                    <span>Email: <a href="#">info@purelyhealth.com</a></span>
+                    <span>Phone: <a href="#">+1 123 456 78</a></span>
+                </div>
+            </div>
+        </div>
+        <br style="clear: both" />
+    </footer>
+    <div class="ft-reserved">
+        <div class="inner-container">
+            <span>&copy; All rights reserved TMC 2015.</span>
+            <span>Designed by: AppBakerz</span>
+        </div>
+        <br style="clear: both" />
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+    <!-- slick-lib -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
